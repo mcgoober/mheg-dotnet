@@ -1,0 +1,259 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{481A0BDA-5089-4A72-9585-E288A5286CBC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MHEG</RootNamespace>
+    <AssemblyName>MHEG</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\MHAction4Int.cs" />
+    <Compile Include="Actions\MHAction6Int.cs" />
+    <Compile Include="Actions\MHActionGenericObjectRef.cs" />
+    <Compile Include="Actions\MHActionInt.cs" />
+    <Compile Include="Actions\MHActionIntInt.cs" />
+    <Compile Include="Actions\MHActionObjectRef.cs" />
+    <Compile Include="Actions\MHActionObjectRef2.cs" />
+    <Compile Include="Actions\MHActivate.cs" />
+    <Compile Include="Actions\MHAdd.cs" />
+    <Compile Include="Actions\MHAddItem.cs" />
+    <Compile Include="Actions\MHAppend.cs" />
+    <Compile Include="Actions\MHBringToFront.cs" />
+    <Compile Include="Actions\MHCall.cs" />
+    <Compile Include="Actions\MHCallActionSlot.cs" />
+    <Compile Include="Actions\MHClear.cs" />
+    <Compile Include="Actions\MHClone.cs" />
+    <Compile Include="Actions\MHDelItem.cs" />
+    <Compile Include="Actions\MHDeselectItem.cs" />
+    <Compile Include="Actions\MHDivide.cs" />
+    <Compile Include="Actions\MHDrawArcSector.cs" />
+    <Compile Include="Actions\MHDrawLine.cs" />
+    <Compile Include="Actions\MHDrawOval.cs" />
+    <Compile Include="Actions\MHDrawPoly.cs" />
+    <Compile Include="Actions\MHDrawRectangle.cs" />
+    <Compile Include="Actions\MHGetAvailabilityStatus.cs" />
+    <Compile Include="Actions\MHGetBitmapDecodeOffset.cs" />
+    <Compile Include="Actions\MHGetBoxSize.cs" />
+    <Compile Include="Actions\MHGetCellItem.cs" />
+    <Compile Include="Actions\MHGetEngineSupport.cs" />
+    <Compile Include="Actions\MHGetFillColour.cs" />
+    <Compile Include="Actions\MHGetFirstItem.cs" />
+    <Compile Include="Actions\MHGetItemStatus.cs" />
+    <Compile Include="Actions\MHGetLineColour.cs" />
+    <Compile Include="Actions\MHGetLineStyle.cs" />
+    <Compile Include="Actions\MHGetLineWidth.cs" />
+    <Compile Include="Actions\MHGetListActionData.cs" />
+    <Compile Include="Actions\MHGetListItem.cs" />
+    <Compile Include="Actions\MHGetListSize.cs" />
+    <Compile Include="Actions\MHGetPosition.cs" />
+    <Compile Include="Actions\MHGetRunningStatus.cs" />
+    <Compile Include="Actions\MHGetTextData.cs" />
+    <Compile Include="Actions\MHGetTokenPosition.cs" />
+    <Compile Include="Actions\MHGetVideoDecodeOffset.cs" />
+    <Compile Include="Actions\MHIntegerAction.cs" />
+    <Compile Include="Actions\MHLaunch.cs" />
+    <Compile Include="Actions\MHLockScreen.cs" />
+    <Compile Include="Actions\MHModulo.cs" />
+    <Compile Include="Actions\MHMove.cs" />
+    <Compile Include="Actions\MHMoveTo.cs" />
+    <Compile Include="Actions\MHMultiply.cs" />
+    <Compile Include="Actions\MHPersistent.cs" />
+    <Compile Include="Actions\MHPreload.cs" />
+    <Compile Include="Actions\MHPutBefore.cs" />
+    <Compile Include="Actions\MHPutBehind.cs" />
+    <Compile Include="Actions\MHQuit.cs" />
+    <Compile Include="Actions\MHRun.cs" />
+    <Compile Include="Actions\MHScaleBitmap.cs" />
+    <Compile Include="Actions\MHScaleVideo.cs" />
+    <Compile Include="Actions\MHScrollItems.cs" />
+    <Compile Include="Actions\MHSelectItem.cs" />
+    <Compile Include="Actions\MHSendToBack.cs" />
+    <Compile Include="Actions\MHSetBackgroundColour.cs" />
+    <Compile Include="Actions\MHSetBitmapDecodeOffset.cs" />
+    <Compile Include="Actions\MHSetBoxSize.cs" />
+    <Compile Include="Actions\MHSetColour.cs" />
+    <Compile Include="Actions\MHSetData.cs" />
+    <Compile Include="Actions\MHSetFillColour.cs" />
+    <Compile Include="Actions\MHSetFirstItem.cs" />
+    <Compile Include="Actions\MHSetFontAttributes.cs" />
+    <Compile Include="Actions\MHSetInputRegister.cs" />
+    <Compile Include="Actions\MHSetLineColour.cs" />
+    <Compile Include="Actions\MHSetLineStyle.cs" />
+    <Compile Include="Actions\MHSetLineWidth.cs" />
+    <Compile Include="Actions\MHSetPosition.cs" />
+    <Compile Include="Actions\MHSetTextColour.cs" />
+    <Compile Include="Actions\MHSetTimer.cs" />
+    <Compile Include="Actions\MHSetTransparency.cs" />
+    <Compile Include="Actions\MHSetVariable.cs" />
+    <Compile Include="Actions\MHSetVideoDecodeOffset.cs" />
+    <Compile Include="Actions\MHSpawn.cs" />
+    <Compile Include="Actions\MHStop.cs" />
+    <Compile Include="Actions\MHSubtract.cs" />
+    <Compile Include="Actions\MHTemporary.cs" />
+    <Compile Include="Actions\MHTestVariable.cs" />
+    <Compile Include="Actions\MHToggleItem.cs" />
+    <Compile Include="Actions\MHUnload.cs" />
+    <Compile Include="Actions\MHUnlockScreen.cs" />
+    <Compile Include="Actions\MHSendEvent.cs" />
+    <Compile Include="ASN1Codes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMHBitmapDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMHContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMHDLADisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMHEG.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ingredients\MHBooleanVar.cs" />
+    <Compile Include="Ingredients\MHContentRefVar.cs" />
+    <Compile Include="Ingredients\MHIntegerVar.cs" />
+    <Compile Include="Ingredients\MHObjectRefVar.cs" />
+    <Compile Include="Ingredients\MHProgram.cs" />
+    <Compile Include="Ingredients\MHOctetStrVar.cs" />
+    <Compile Include="Ingredients\MHResidentProgram.cs" />
+    <Compile Include="Ingredients\MHVariable.cs" />
+    <Compile Include="Ingredients\Presentable\MHAudio.cs" />
+    <Compile Include="Ingredients\Presentable\MHBitmap.cs" />
+    <Compile Include="Ingredients\Presentable\MHButton.cs" />
+    <Compile Include="Ingredients\Presentable\MHDynamicLineArt.cs" />
+    <Compile Include="Ingredients\Presentable\MHEntryField.cs" />
+    <Compile Include="Ingredients\Presentable\MHHyperText.cs" />
+    <Compile Include="Ingredients\Presentable\MHLineArt.cs" />
+    <Compile Include="Ingredients\Presentable\MHListGroup.cs" />
+    <Compile Include="Ingredients\Presentable\MHListItem.cs" />
+    <Compile Include="Ingredients\Presentable\MHMovement.cs" />
+    <Compile Include="Ingredients\Presentable\MHPushButton.cs" />
+    <Compile Include="Ingredients\Presentable\MHRectangle.cs" />
+    <Compile Include="Ingredients\Presentable\MHRTGraphics.cs" />
+    <Compile Include="Ingredients\Presentable\MHSlider.cs" />
+    <Compile Include="Ingredients\Presentable\MHStream.cs" />
+    <Compile Include="Ingredients\Presentable\MHText.cs" />
+    <Compile Include="Ingredients\Presentable\MHTextItem.cs" />
+    <Compile Include="Ingredients\Presentable\MHTextLine.cs" />
+    <Compile Include="Ingredients\Presentable\MHTokenGroup.cs" />
+    <Compile Include="Ingredients\Presentable\MHTokenGroupItem.cs" />
+    <Compile Include="Ingredients\Presentable\MHVideo.cs" />
+    <Compile Include="MHEGEngineFactory.cs" />
+    <Compile Include="MHTimer.cs" />
+    <Compile Include="Parser\IMHParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMHTextDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ingredients\Presentable\MHPresentable.cs" />
+    <Compile Include="Logging.cs" />
+    <Compile Include="MHApplication.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MHColour.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MHContentRef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MHEGException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\MHElemAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MHEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MHFontBody.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MHGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ingredients\MHIngredient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ingredients\MHLink.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MHObjectRef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MHOctetString.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MHParameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parser\MHParseBinary.cs" />
+    <Compile Include="Parser\MHParseNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parser\MHParseText.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MHPointArg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MHRgba.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MHRoot.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MHScene.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MHSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\MHTransitionTo.cs" />
+    <Compile Include="MHUnion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ingredients\Presentable\MHVisible.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
